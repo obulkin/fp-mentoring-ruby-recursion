@@ -12,6 +12,7 @@ Practice recursion and parsing through complex data structures.
 ### Installation
 ```
 git clone git@github.com:KaoruDev/mentoring-recursive-friends.git
+bundle install
 ```
 
 
