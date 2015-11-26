@@ -8,13 +8,27 @@ class FriendFinder
     @uri = URI(url)
   end
 
+  def find_by(name)
+  end
+
+  def number_of_friends
+  end
+
+  def number_of_friends_who_work_at(company_name)
+  end
+
+  def meta
+    response["meta"]
+  end
+
   private
 
-  def response
-    @response ||= Net::HTTP.get(@uri)
+  def raw_response
+    @raw_response ||= Net::HTTP.get(@uri)
   end
 
-  def json_response
-    JSON.parse(response)
+  def response
+    JSON.parse(raw_response)
   end
+
 end
